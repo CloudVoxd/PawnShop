@@ -1,4 +1,4 @@
-item = new ShoppingItmem(
+item = new ShoppingItem(
 500,
 sOldTv,
 "Made in the year 1960 This is a one of kind retro TV "+
