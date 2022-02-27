@@ -7,8 +7,10 @@ function ShoppingItem(_cost, _spr, _desc, _audioSound,_isReal, _isSelling = true
 	isSelling = _isSelling;
 	isReal = _isReal
 	itemName = global.items[_spr];
+        audioSound = _audioSound
 	static Poked = function(){
-		
+		audio_play_sound(asset_get_index(audioSound), 10, false);
+}
 	}
 }
 function Character(_spr) constructor{
