@@ -3,12 +3,13 @@ function ShoppingItem(_cost, _spr, _desc, _audioSound,_isReal, _isSelling = true
 	sm_index = global.smallImg[_spr];
 	bg_index = global.bigImg[_spr];
 	description = _desc;
+        audioSound = _audioSound;
 	isSelling = _isSelling;
 	isReal = _isReal
 	itemName = global.items[_spr];
 	static Poked = function(){
         audioSound = audioplayed
-        audio_play_sound(audioplayed, 10, false);
+        audio_play_sound(asset_get_index(audioplayed), 10, false);
 }
 		//add audio sound here
 	}
